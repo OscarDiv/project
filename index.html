@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Form validation</title>
+</head>
+<body>
+    <div class="container">
+
+        <form id="form">
+            <div class="title">Get started</div>
+            <!-- /**
+              * !  user name input here 
+            **/ -->
+            <div>
+                <label for="username">User name:</label>
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="username" id="username" placeholder="oscar">
+                <i class="fa-solid fa-exclamation failure-icon"></i>
+                <i class="fa-solid fa-check success-icon"></i>
+                <div class="error"></div>
+            </div>
+
+            <!-- /**
+              * !  Email input here 
+            **/ -->
+
+            <div>
+                <label for="Email">Email:</label>
+                <i class="fa-solid fa-envelope-circle-check"></i>
+                <input type="email" name="Email" id="Email" placeholder="abc@gmail.com">
+                <i class="fa-solid fa-exclamation failure-icon"></i>
+                <i class="fa-solid fa-check success-icon"></i>
+                <div class="error"></div>
+            </div>
+
+            <!-- /**
+              * !  password input here 
+            **/ -->
+
+            <div>
+                <label for="password">Password:</label>
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" name="password" id="password" placeholder="password here">
+                <i class="fa-solid fa-exclamation failure-icon"></i>
+                <i class="fa-solid fa-check success-icon"></i>
+                <div class="error"></div>
+            </div>
+
+
+            <button type="submit" id="submit">submit</button>
+
+        </form>
+
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
